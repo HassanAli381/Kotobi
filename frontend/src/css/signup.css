@@ -1,0 +1,116 @@
+:root {
+  --clr-main: rgb(26, 155, 232);
+  --clr-second: rgb(32, 33, 36);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  padding: 45px;
+  width: 450px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    border: none;
+    width: 100%;
+  }
+}
+
+.wrapper > a {
+  font-family: 'Marhey', sans-serif;
+  display: block;
+  text-decoration: none;
+  font-size: 1.375rem;
+  line-height: 1;
+  margin: 0 0 20px;
+  color: var(--clr-main);
+  text-align: center;
+}
+
+.wrapper > h1 {
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--clr-second);
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.wrapper .field {
+  margin-bottom: 25px;
+}
+
+.wrapper .field label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.wrapper input,
+.wrapper button {
+  outline: none;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border: 1px solid;
+  font-size: 1rem;
+}
+
+.wrapper input {
+  font-size: 1rem;
+  width: 100%;
+  padding: 15px;
+  color: rgb(32, 33, 36);
+  border-color: #ddd;
+}
+
+.wrapper button {
+  width: 100%;
+  padding: 15px 15px;
+  margin-top: 15px;
+  outline: none;
+  border: 1px solid white;
+  background-color: var(--clr-main);
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.wrapper input:focus,
+.wrapper button:focus {
+  outline: 2px solid var(--clr-main);
+}
+
+.wrapper button:active {
+  outline: none;
+}
+
+.wrapper button:hover {
+  background-color: rgb(26, 155, 200);
+}
+
+.wrapper input:user-invalid {
+  outline: 2px solid rgb(217, 88, 37);
+}

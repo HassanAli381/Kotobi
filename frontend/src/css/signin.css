@@ -1,0 +1,232 @@
+:root {
+  --fc-main: #8c8c8c;
+  --bg-main: #333333;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  background-color: hsl(0, 0%, 0%);
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+}
+
+main {
+  padding: 10px;
+  position: relative;
+}
+
+.wrapper {
+  padding: 15px 3%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #000000;
+  min-height: 600px;
+  position: relative;
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+@media (min-width: 750px) {
+  .wrapper {
+    max-width: 450px;
+    background-color: rgba(0, 0, 0, 0.75);
+    margin-top: calc((100vh - 600px) / 2);
+  }
+
+  main {
+    min-height: 100vh;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+  }
+}
+
+.wrapper h1 {
+  font-size: 2rem;
+  color: white;
+  font-weight: 600;
+}
+
+.field {
+  position: relative;
+  margin-bottom: 20px;
+  background-color: var(--bg-main);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.field label {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  color: var(--fc-main);
+  font-size: 0.875rem;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transition: font 0.1s ease, top 0.1s ease, transform 0.1s ease;
+  -webkit-transition: font 0.1s ease, top 0.1s ease, transform 0.1s ease;
+  -moz-transition: font 0.1s ease, top 0.1s ease, transform 0.1s ease;
+  -ms-transition: font 0.1s ease, top 0.1s ease, transform 0.1s ease;
+  -o-transition: font 0.1s ease, top 0.1s ease, transform 0.1s ease;
+}
+
+.field input {
+  padding: 15px 20px 0;
+  width: 100%;
+  height: 50px;
+  font-size: 1.0625rem;
+  color: white;
+  background-color: transparent;
+  border: none;
+  caret-color: var(--fc-main);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.field input:focus {
+  outline: none;
+  background: #454545;
+}
+
+.field input:focus + label {
+  top: 7px;
+  font-size: 11px;
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+}
+
+.wrapper form button {
+  width: 100%;
+  padding: 16px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #e50914;
+  border: none;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.wrapper .remember-help {
+  display: flex;
+  justify-content: space-between;
+  color: var(--fc-main);
+  font-size: 0.875rem;
+  margin-bottom: 40px;
+}
+
+.wrapper .remember-me input[type='checkbox'] {
+  background-color: red;
+}
+
+.wrapper .remember-help a {
+  color: #b3b3b3;
+  text-decoration: none;
+}
+
+.wrapper .remember-help .remember-me {
+  vertical-align: middle;
+}
+
+.wrapper .goto-register {
+  color: var(--fc-main);
+}
+
+.wrapper .goto-register a {
+  text-decoration: none;
+  color: white;
+}
+
+.wrapper .page-info {
+  color: white;
+  font-size: 0.875rem;
+  color: var(--fc-main);
+}
+
+.wrapper .page-info button {
+  border: none;
+  background-color: transparent;
+  color: #0071eb;
+}
+
+.wrapper .page-info button:hover {
+  text-decoration: underline;
+}
+
+footer hr {
+  border-color: var(--bg-main);
+  margin-top: -1px;
+}
+
+footer .container {
+  padding: 20px 3%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+  color: var(--fc-main);
+}
+
+footer .container a {
+  color: var(--fc-main);
+  text-decoration: none;
+}
+
+footer .container .links {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+footer .container .links a {
+  font-size: 0.8125rem;
+}
+
+footer .container #language {
+  background-color: #000;
+  background-image: none;
+  border: 1px solid #333;
+  font-size: 0.875rem;
+  color: white;
+  text-indent: 0;
+  line-height: 1.7;
+  padding: 10px;
+  margin-bottom: 40px;
+}

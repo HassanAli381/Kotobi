@@ -1,0 +1,191 @@
+[
+  {
+    "name": "To Kill a Mockingbird",
+    "price": 12.5,
+    "description": "A powerful story of racial injustice and moral growth in the American South.",
+    "author": "Harper Lee",
+    "category": "Fiction"
+  },
+  {
+    "name": "The Hitchhiker's Guide to the Galaxy",
+    "price": 10.75,
+    "description": "A comedic science fiction series following the misadventures of Arthur Dent.",
+    "author": "Douglas Adams",
+    "category": "Science Fiction"
+  },
+  {
+    "name": "1984",
+    "price": 14.25,
+    "description": "A dystopian novel exploring the consequences of totalitarianism and thought control.",
+    "author": "George Orwell",
+    "category": "Fiction"
+  },
+  {
+    "name": "The Catcher in the Rye",
+    "price": 11.99,
+    "description": "A classic novel depicting the experiences of a teenage boy in New York City.",
+    "author": "J.D. Salinger",
+    "category": "Fiction"
+  },
+  {
+    "name": "Sapiens: A Brief History of Humankind",
+    "price": 18.5,
+    "description": "An exploration of the history and impact of Homo sapiens on the world.",
+    "author": "Yuval Noah Harari",
+    "category": "Non-Fiction"
+  },
+  {
+    "name": "The Da Vinci Code",
+    "price": 13.99,
+    "description": "A mystery thriller that combines art, religion, and secret societies.",
+    "author": "Dan Brown",
+    "category": "Mystery"
+  },
+  {
+    "name": "The Hobbit",
+    "price": 16.0,
+    "description": "A fantasy novel following the journey of Bilbo Baggins as he seeks treasure guarded by a dragon.",
+    "author": "J.R.R. Tolkien",
+    "category": "Fantasy"
+  },
+  {
+    "name": "The Lord of the Rings",
+    "price": 22.5,
+    "description": "An epic fantasy trilogy following the quest to destroy the One Ring.",
+    "author": "J.R.R. Tolkien",
+    "category": "Fantasy"
+  },
+  {
+    "name": "Pride and Prejudice",
+    "price": 11.25,
+    "description": "A classic novel exploring love, reputation, and social class in early 19th-century England.",
+    "author": "Jane Austen",
+    "category": "Fiction"
+  },
+  {
+    "name": "The Hunger Games",
+    "price": 14.99,
+    "description": "A dystopian series where teenagers are forced to participate in a televised death match.",
+    "author": "Suzanne Collins",
+    "category": "Science Fiction"
+  },
+  {
+    "name": "The Alchemist",
+    "price": 13.0,
+    "description": "A philosophical novel about a shepherd's journey to find his personal legend.",
+    "author": "Paulo Coelho",
+    "category": "Fiction"
+  },
+  {
+    "name": "The Chronicles of Narnia",
+    "price": 19.75,
+    "description": "A series of high-fantasy novels exploring the magical land of Narnia.",
+    "author": "C.S. Lewis",
+    "category": "Fantasy"
+  },
+  {
+    "name": "The Color Purple",
+    "price": 16.5,
+    "description": "A novel depicting the life and struggles of an African American woman in the early 20th century.",
+    "author": "Alice Walker",
+    "category": "Fiction"
+  },
+  {
+    "name": "Brave New World",
+    "price": 17.25,
+    "description": "A dystopian novel exploring a future society built on mass production, conformity, and hedonism.",
+    "author": "Aldous Huxley",
+    "category": "Fiction"
+  },
+  {
+    "name": "The Kite Runner",
+    "price": 15.75,
+    "description": "A novel exploring the complex relationships and events in Afghanistan over several decades.",
+    "author": "Khaled Hosseini",
+    "category": "Fiction"
+  },
+  {
+    "name": "The Art of War",
+    "price": 10.5,
+    "description": "An ancient Chinese treatise on military strategy attributed to Sun Tzu.",
+    "author": "Sun Tzu",
+    "category": "Non-Fiction"
+  },
+  {
+    "name": "The Silent Patient",
+    "price": 14.0,
+    "description": "A psychological thriller about a woman's act of violence and her subsequent silence.",
+    "author": "Alex Michaelides",
+    "category": "Mystery"
+  },
+  {
+    "name": "Harry Potter and the Sorcerer's Stone",
+    "price": 20.0,
+    "description": "The first book in the magical series following the young wizard Harry Potter.",
+    "author": "J.K. Rowling",
+    "category": "Fantasy"
+  },
+  {
+    "name": "The Shining",
+    "price": 12.99,
+    "description": "A horror novel about a family isolated in a haunted hotel during the winter.",
+    "author": "Stephen King",
+    "category": "Horror"
+  },
+  {
+    "name": "Moby-Dick",
+    "price": 18.5,
+    "description": "A classic novel exploring the obsessive quest for revenge against the white whale.",
+    "author": "Herman Melville",
+    "category": "Fiction"
+  },
+  {
+    "name": "The Fault in Our Stars",
+    "price": 14.25,
+    "description": "A contemporary romance novel about two teenagers with cancer who fall in love.",
+    "author": "John Green",
+    "category": "Romance"
+  },
+  {
+    "name": "One Hundred Years of Solitude",
+    "price": 16.75,
+    "description": "A magical realist novel depicting the multi-generational Buendía family in the fictional town of Macondo.",
+    "author": "Gabriel García Márquez",
+    "category": "Fiction"
+  },
+  {
+    "name": "Fahrenheit 451",
+    "price": 13.5,
+    "description": "A dystopian novel exploring a future society where books are banned and 'firemen' burn any that are found.",
+    "author": "Ray Bradbury",
+    "category": "Fiction"
+  },
+  {
+    "name": "The Girl with the Dragon Tattoo",
+    "price": 15.99,
+    "description": "A psychological thriller involving a journalist and a hacker investigating a wealthy family's dark secrets.",
+    "author": "Stieg Larsson",
+    "category": "Mystery"
+  },
+  {
+    "name": "The Martian",
+    "price": 17.5,
+    "description": "A science fiction novel about an astronaut stranded on Mars and his struggle for survival.",
+    "author": "Andy Weir",
+    "category": "Science Fiction"
+  },
+  {
+    "name": "Educated",
+    "price": 19.25,
+    "description": "A memoir detailing the author's journey from growing up in a strict household to pursuing education against the odds.",
+    "author": "Tara Westover",
+    "category": "Non-Fiction"
+  },
+  {
+    "name": "The Catcher in the Rye",
+    "price": 11.99,
+    "description": "A classic novel depicting the experiences of a teenage boy in New York City.",
+    "author": "J.D. Salinger",
+    "category": "Fiction"
+  }
+]
