@@ -1,5 +1,5 @@
 # Kotobi
-Kotibi is a website where book lovers can discover, share, and connect, Kotobi provides functionality for users to discover books, giving them access to add, delete, and update them 
+Kotobi is a website where book lovers can discover, share, and connect, Kotobi provides functionality for users to discover books, giving them access to add, delete, and update them 
 and other nice features.
 
 ## Technologies Used
