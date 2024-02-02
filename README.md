@@ -25,21 +25,24 @@ To run Kotobi locally or deploy it to a server, follow these steps:
 
 - open a new terminal.
 - `cd Kotobi`.
+- `cd backend`
 - Write `npm install`.
 
 3. Configure the environment variables:
 - Create a .env file in the root directory and add the following variables:
 
-  - makefile
-  - Copy code
-  - MONGO_URL=your-mongodb-uri
-  -PORT=3000
-  -JWT_SECRET_KEY=your-jwt-secret-key
-  -NODE_ENV=development
-  - Replace your-mongodb-uri and your-secret-key with your MongoDB connection string and a secret key for JWT token generation.
+    - MONGO_URL=your-mongodb-uri
+
+    - PORT=3000
+
+    - JWT_SECRET_KEY=your-jwt-secret-key
+
+    - NODE_ENV=development
+  
+- Replace your-mongodb-uri and your-secret-key with your MongoDB connection string and a secret key for JWT token generation.
 
 4. Start the server:
 
 - Open terminal.
-- Write `npm start`.
+- Write `npm run start:dev`.
 - Open your web browser and access the application at `http://localhost:3000`.
