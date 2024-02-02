@@ -33,7 +33,7 @@ app.use((req, res, next) => {
     next();
 });
 
-app.use('/api/user', usersRoutes);
+app.use('/api/users', usersRoutes);
 app.use('/api/books', booksRoutes);
 
 // global middleware for not found routes

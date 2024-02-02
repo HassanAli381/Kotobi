@@ -29,7 +29,6 @@ const userSchema = new mongoose.Schema({
         default: 'default.jpg'
     },
 },
-// timestamps make us trak (createdAt, updatedAt)
 {
     timestamps: true
 }
