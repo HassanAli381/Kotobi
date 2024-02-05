@@ -3,6 +3,35 @@ const asyncWrapper = require('../Middlewares/asyncWrapper');
 const AppError = require('../utils/AppError');
 const validateObjectId = require('./../utils/validateObjectId');
 
+const multer = require('multer');
+
+const multerStorage = multer.diskStorage({
+    destination: (req, res, cb) => {
+        cb(null, `${__dirname}/../../frontend/img`);
+    },
+    filename: (req, file, cb) => {
+        const ext = file.mimetype.split('/')[1];
+        cb(null, `user-${req.currentUser.id}-${Date.now()}.${ext}`);
+    }
+});
+
+const multerFilter = (req, file, cb) => {
+    if(file.mimetype.startsWith('image')) {
+        cb(null, true);
+    }
+    else {
+        cb(AppError.createError('This field accepts only images', 400, 'fail '), false);
+    }
+}
+
+const upload = multer({
+    storage: multerStorage,
+    fileFilter: multerFilter
+});
+
+exports.uploadBookPhoto = upload.single('photo');
+
+
 exports.getAllBooks = asyncWrapper(async (req, res, next) => {
     const query = req.query;
     const limit = query.limit || 10;
@@ -47,6 +76,8 @@ exports.getSingleBook = asyncWrapper(async (req, res, next) => {
 
 exports.addBook = asyncWrapper(async (req, res) => {
     const newBook = new Book(req.body);
+    if(req.file)
+        newBook.photo = req.file.filename;
     await newBook.save();
     res.status(200).json({
         status: 'success', 
@@ -70,6 +101,11 @@ exports.updateBook = asyncWrapper(async (req, res, next) => {
         {$set: {...req.body} },
         {new: true}
     );
+
+    if(req.file){
+        updatedBook.photo = req.file.filename;
+        await updatedBook.save();
+    }
 
     res.status(200).json({
         status: 'success',
