@@ -6,11 +6,11 @@ const allowedTo = require('./../Middlewares/allowedTo');
 
 router.route('/')
     .get(booksController.getAllBooks)
-    .post(verify, allowedTo('ADMIN'), booksController.addBook);
+    .post(verify, allowedTo(), booksController.uploadBookPhoto, booksController.addBook);
 
 router.route('/:id')
     .get(booksController.getSingleBook)
-    .patch(verify, allowedTo('ADMIN'), booksController.updateBook)
-    .delete(verify, allowedTo('ADMIN'), booksController.deleteBook);
+    .patch(verify, allowedTo(), booksController.uploadBookPhoto, booksController.updateBook)
+    .delete(verify, allowedTo(), booksController.deleteBook);
 
 module.exports = router;
