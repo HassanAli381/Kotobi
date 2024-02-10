@@ -7,17 +7,21 @@
   <title>Kotobi</title>
   <link rel="stylesheet" href="src/css/style.css">
 
+  <link rel="stylesheet" href="/frontend/src/css/all.min.css">
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Marhey:wght@700&display=swap" rel="stylesheet">
 
+
   <script src="src/js/script.js" defer></script>
+  <script src="src/js/slider.js" defer></script>
 </head>
 
 <body>
   <header class="header">
-    <div class="container">
+    <div class="wrapper">
       <h1><a href="#">Kotobi</a></h1>
       <div class="nav-search">
         <form action="" method="POST">
@@ -29,18 +33,25 @@
                 d="M51.539,49.356L37.247,35.065c3.273-3.74,5.272-8.623,5.272-13.983c0-11.742-9.518-21.26-21.26-21.26 S0,9.339,0,21.082s9.518,21.26,21.26,21.26c5.361,0,10.244-1.999,13.983-5.272l14.292,14.292L51.539,49.356z M2.835,21.082 c0-10.176,8.249-18.425,18.425-18.425s18.425,8.249,18.425,18.425S31.436,39.507,21.26,39.507S2.835,31.258,2.835,21.082z">
               </path>
             </svg>
-            <input type="search" name="search" id="search" placeholder="Search for books...">
-            <label for="" class="visually-hidden">search</label>
+            <!-- <input type="search" name="search" id="search" placeholder="Search for books...">
+            <label for="" class="visually-hidden">search</label> -->
           </div>
         </form>
       </div>
+      <!-- <button>Sign in</button>
+      <button>Signup</button> -->
     </div>
   </header>
 
   <main>
-    <div class="books">
-      <div class="container">
-        <!-- <article class="book">
+    <section class="landing">
+      <div class="wrapper">
+        <!-- <h1>Books are the plane, and the train, and the road. They are the destination, and the journey <span class="special">Start your journy with Kotobi</span></h1> -->
+      </div>
+    </section>
+    <!-- <div class="books">
+      <div class="wrapper">
+        <article class="book">
           <div class="image">
             <a href="#">
               <img src="book.jpg" alt="Something">
@@ -50,15 +61,271 @@
             <h3><a href="" class="title">Book Name</a></h3>
             <span class="book-price">$1345</span>
           </div>
-        </article> -->
+        </article>
 
       </div>
-    </div>
+      <div class="pagination">
+        <button>Prev</button>
+        <span class="page-number">1</span>
+        <button>Next</button>
+      </div>
+    </div> -->
+
+
+    <section class="featured">
+      <h2 class="section-heading">Featured Books</h2>
+      <div class="wrapper">
+        <div class="featured-books books slider">
+          <article class="book">
+            <div class="image">
+                <img src="book.jpg" alt="Book">
+            </div>
+            <div class="book-info">
+              <h3><a href="" class="title">Book Name</a></h3>
+              <span class="price">
+                <span class="price-currency">$</span><span class="price-value">1345</span>
+              </span>
+            </div>
+          </article>
+          <article class="book">
+            <div class="image">
+                <img src="book4.jpeg" alt="Book">
+            </div>
+            <div class="book-info">
+              <h3><a href="" class="title">Book Name</a></h3>
+              <span class="price">
+                <span class="price-currency">$</span><span class="price-value">1345</span>
+              </span>
+            </div>
+          </article>
+          <article class="book">
+            <div class="image">
+                <img src="book3.jpeg" alt="Book">
+            </div>
+            <div class="book-info">
+              <h3><a href="" class="title">Book Name</a></h3>
+              <span class="price">
+                <span class="price-currency">$</span><span class="price-value">1345</span>
+              </span>
+            </div>
+          </article>
+          <article class="book">
+            <div class="image">
+                <img src="book2.jpg" alt="Book">
+            </div>
+            <div class="book-info">
+              <h3><a href="" class="title">Book Name</a></h3>
+              <span class="price">
+                <span class="price-currency">$</span><span class="price-value">1345</span>
+              </span>
+            </div>
+          </article>
+          <article class="book">
+            <div class="image">
+                <img src="book2.jpg" alt="Book">
+            </div>
+            <div class="book-info">
+              <h3><a href="" class="title">Book Name</a></h3>
+              <span class="price">
+                <span class="price-currency">$</span><span class="price-value">1345</span>
+              </span>
+            </div>
+          </article>
+          <article class="book">
+            <div class="image">
+                <img src="book2.jpg" alt="Book">
+            </div>
+            <div class="book-info">
+              <h3><a href="" class="title">Book Name</a></h3>
+              <span class="price">
+                <span class="price-currency">$</span><span class="price-value">1345</span>
+              </span>
+            </div>
+          </article>
+          <article class="book">
+            <div class="image">
+                <img src="book2.jpg" alt="Book">
+            </div>
+            <div class="book-info">
+              <h3><a href="" class="title">Book Name</a></h3>
+              <span class="price">
+                <span class="price-currency">$</span><span class="price-value">1345</span>
+              </span>
+            </div>
+          </article>
+          <article class="book">
+            <div class="image">
+                <img src="book2.jpg" alt="Book">
+            </div>
+            <div class="book-info">
+              <h3><a href="" class="title">Book Name</a></h3>
+              <span class="price">
+                <span class="price-currency">$</span><span class="price-value">1345</span>
+              </span>
+            </div>
+          </article>
+          <article class="book">
+            <div class="image">
+                <img src="book2.jpg" alt="Book">
+            </div>
+            <div class="book-info">
+              <h3><a href="" class="title">Book Name</a></h3>
+              <span class="price">
+                <span class="price-currency">$</span><span class="price-value">1345</span>
+              </span>
+            </div>
+          </article>
+          <article class="book">
+            <div class="image">
+                <img src="book2.jpg" alt="Book">
+            </div>
+            <div class="book-info">
+              <h3><a href="" class="title">Book Name</a></h3>
+              <span class="price">
+                <span class="price-currency">$</span><span class="price-value">1345</span>
+              </span>
+            </div>
+          </article>
+          <button class="btn-prev">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="btn-next">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="new-arrivals">
+      <h2 class="section-heading">New Arrivals</h2>
+      <div class="wrapper">
+        <div class="new-books books slider">
+          <article class="book">
+            <div class="image">
+                <img src="book2.jpg" alt="Book">
+            </div>
+            <div class="book-info">
+              <h3><a href="" class="title">Book Name</a></h3>
+              <span class="price">
+                <span class="price-currency">$</span><span class="price-value">1345</span>
+              </span>
+            </div>
+          </article>
+          <article class="book">
+            <div class="image">
+                <img src="book3.jpeg" alt="Book">
+            </div>
+            <div class="book-info">
+              <h3><a href="" class="title">Book Name</a></h3>
+              <span class="price">
+                <span class="price-currency">$</span><span class="price-value">1345</span>
+              </span>
+            </div>
+          </article>
+          <article class="book">
+            <div class="image">
+                <img src="book.jpg" alt="Book">
+            </div>
+            <div class="book-info">
+              <h3><a href="" class="title">Book Name</a></h3>
+              <span class="price">
+                <span class="price-currency">$</span><span class="price-value">1345</span>
+              </span>
+            </div>
+          </article>
+          <article class="book">
+            <div class="image">
+                <img src="book4.jpeg" alt="Book">
+            </div>
+            <div class="book-info">
+              <h3><a href="" class="title">Book Name</a></h3>
+              <span class="price">
+                <span class="price-currency">$</span><span class="price-value">1345</span>
+              </span>
+            </div>
+          </article>
+          <article class="book">
+            <div class="image">
+                <img src="book2.jpg" alt="Book">
+            </div>
+            <div class="book-info">
+              <h3><a href="" class="title">Book Name</a></h3>
+              <span class="price">
+                <span class="price-currency">$</span><span class="price-value">1345</span>
+              </span>
+            </div>
+          </article>
+          <article class="book">
+            <div class="image">
+                <img src="book2.jpg" alt="Book">
+            </div>
+            <div class="book-info">
+              <h3><a href="" class="title">Book Name</a></h3>
+              <span class="price">
+                <span class="price-currency">$</span><span class="price-value">1345</span>
+              </span>
+            </div>
+          </article>
+          <article class="book">
+            <div class="image">
+                <img src="book2.jpg" alt="Book">
+            </div>
+            <div class="book-info">
+              <h3><a href="" class="title">Book Name</a></h3>
+              <span class="price">
+                <span class="price-currency">$</span><span class="price-value">1345</span>
+              </span>
+            </div>
+          </article>
+          <article class="book">
+            <div class="image">
+                <img src="book2.jpg" alt="Book">
+            </div>
+            <div class="book-info">
+              <h3><a href="" class="title">Book Name</a></h3>
+              <span class="price">
+                <span class="price-currency">$</span><span class="price-value">1345</span>
+              </span>
+            </div>
+          </article>
+          <article class="book">
+            <div class="image">
+                <img src="book2.jpg" alt="Book">
+            </div>
+            <div class="book-info">
+              <h3><a href="" class="title">Book Name</a></h3>
+              <span class="price">
+                <span class="price-currency">$</span><span class="price-value">1345</span>
+              </span>
+            </div>
+          </article>
+          <article class="book">
+            <div class="image">
+                <img src="book2.jpg" alt="Book">
+            </div>
+            <div class="book-info">
+              <h3><a href="" class="title">Book Name</a></h3>
+              <span class="price">
+                <span class="price-currency">$</span><span class="price-value">1345</span>
+              </span>
+            </div>
+          </article>
+          <button class="btn-prev">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="btn-next">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
 
   </footer>
+
+
 </body>
 
 </html>
