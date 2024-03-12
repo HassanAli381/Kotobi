@@ -1,89 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sign in for Kotobi. Explore a world of knowledge and imagination at Kotobi. Discover a vast collection of books, engage in literary discussions, and join a community of book enthusiasts. Sign up now for a literary adventure into endless possibilities through the magic of words."
+    />
+    <title>Sign in - Hassdalla</title>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description"
-		content="Sign in for Kotobi. Explore a world of knowledge and imagination at Kotobi. Discover a vast collection of books, engage in literary discussions, and join a community of book enthusiasts. Sign up now for a literary adventure into endless possibilities through the magic of words.">
-	<title>Sign in - Hassdalla</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-	<!-- Google Fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/signin.css" />
 
-	<link rel="stylesheet" href="src/css/signin.css">
-</head>
+    <script src="src/js/signin.js" defer></script>
+  </head>
 
-<body>
-	<main>
-		<div class="overlay"></div>
-		<div class="wrapper">
-			<h1>Sign in</h1>
-			<form action="" target="_blank">
-				<div class="email-field field">
-					<input required autocomplete="email" type="email" name="email" id="email">
-					<label for="email">Email</label>
-				</div>
+  <body>
+    <main>
+      <div class="overlay"></div>
+      <div class="wrapper">
+        <h1>Sign in</h1>
+        <form action="" target="_blank" class="signin">
+          <div class="email-field field">
+            <input
+              required
+              autocomplete="email"
+              type="email"
+              name="email"
+              id="email"
+            />
+            <label for="email">Email</label>
+          </div>
 
-				<div class="password-field field">
-					<input required type="password" name="password" id="password">
-					<label for="password">Password</label>
-				</div>
+          <div class="password-field field">
+            <input required type="password" name="password" id="password" />
+            <label for="password">Password</label>
+          </div>
 
-				<button>Sign in</button>
-			</form>
+          <button>Sign in</button>
+        </form>
 
-			<div class="remember-help">
-				<div class="remember-me">
-					<input type="checkbox" name="remember" id="remember">
-					<label for="remember">Remember me</label>
-				</div>
-				<a href="#">Need help?</a>
-			</div>
+        <div class="remember-help">
+          <div class="remember-me">
+            <input type="checkbox" name="remember" id="remember" />
+            <label for="remember">Remember me</label>
+          </div>
+          <a href="#">Need help?</a>
+        </div>
 
-			<div class="goto-register">
-				<span>New to Hassdalla?</span>
-				<a href="./signup.html" class="register">Sign up now</a>
-				.
-			</div>
+        <div class="goto-register">
+          <span>New to Hassdalla?</span>
+          <a href="./signup.html" class="register">Sign up now</a>
+          .
+        </div>
 
-			<div class="page-info">
-				<p>This page is protected by Google reCAPTCHA to ensure you're not a bot.
-					<button>Learn more.</button>
-				</p>
-				<!-- TODO make the leran more button show the text blow -->
-				<p style="display: none">
-					The information collected by Google reCAPTCHA is subject to the Google Privacy Policy and Terms of Service,
-					and is used for providing, maintaining and improving the reCAPTCHA service and for general security purposes
-					(it is not used for personalised advertising by Google).
-				</p>
-			</div>
-		</div>
-	</main>
+        <div class="page-info">
+          <p>
+            This page is protected by Google reCAPTCHA to ensure you're not a
+            bot.
+            <button>Learn more.</button>
+          </p>
+          <!-- TODO make the leran more button show the text blow -->
+          <p style="display: none">
+            The information collected by Google reCAPTCHA is subject to the
+            Google Privacy Policy and Terms of Service, and is used for
+            providing, maintaining and improving the reCAPTCHA service and for
+            general security purposes (it is not used for personalised
+            advertising by Google).
+          </p>
+        </div>
+      </div>
+    </main>
 
-	<footer>
-		<hr>
-		<div class="container">
-			<p><a href="#">Question? Contact us.</a></p>
-			<ul class="links">
-				<li><a href="#">FAQ</a></li>
-				<li><a href="#">Help Center</a></li>
-				<li><a href="#">Terms of Use</a></li>
-				<li><a href="#">Privacy</a></li>
-				<li><a href="#">Cookie Prefrences</a></li>
-				<li><a href="#">Corporate Inormation</a></li>
-				<li><a href="#">Advert Choices</a></li>
-			</ul>
-			<div>
-				<select name="language" id="language" autocomplete="language">
-					<option value="english">English</option>
-					<option value="Arabic">Arabic</option>
-				</select>
-			</div>
-		</div>
-	</footer>
-</body>
-
+    <footer>
+      <hr />
+      <div class="container">
+        <p><a href="#">Question? Contact us.</a></p>
+        <ul class="links">
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Cookie Prefrences</a></li>
+          <li><a href="#">Corporate Inormation</a></li>
+          <li><a href="#">Advert Choices</a></li>
+        </ul>
+        <div>
+          <select name="language" id="language" autocomplete="language">
+            <option value="english">English</option>
+            <option value="Arabic">Arabic</option>
+          </select>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

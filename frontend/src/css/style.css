@@ -339,13 +339,13 @@ body {
 
 .slider .btn-prev { 
   left: 0;
-  background: linear-gradient(-90deg, rgba(255, 255, 255, 0), #fff 100%);
+  background: linear-gradient(-90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 100%);
   display: none;
 }
 
 .slider .btn-next {
   right: 0px;
-  background: linear-gradient(-90deg, rgba(255, 255, 255, 0), #fff 100%);
+  background: linear-gradient(-90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 100%);
   transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -354,3 +354,25 @@ body {
 }
 
 
+/* Category */
+.category-cards {
+  display: flex;
+  overflow: hidden;
+  gap: 20px;
+}
+
+.category h3 {
+  padding: 50px;
+  background-image: radial-gradient(#e66465, #9198e5);
+  margin: 0;
+}
+
+.category {
+  flex: 1 0 auto;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  overflow: hidden;
+}
