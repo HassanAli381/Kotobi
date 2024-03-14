@@ -4,23 +4,22 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   const url = `http://localhost:3000/api/users/login`;
-  // const formData = new FormData(form);
 
-  // const username = formData.get("username");
-  // const password = formData.get("password");
+  const formData = new FormData(form);
 
-  // const data = {
-  //   username,
-  //   password,
-  // };
+  const email = formData.get("email");
+  const password = formData.get("password");
 
-  // console.log(JSON.stringify(data));
+  const data = {
+    email,
+    password,
+  };
 
-  console.log(JSON.stringify({ email: "user@gmail.com", password: "123" }));
+  console.log(JSON.stringify(data));
 
   const options = {
     method: "POST",
-    body: JSON.stringify({ email: "user2@gmail.com", password: "123" }),
+    body: JSON.stringify(data),
     headers: {
       "Content-type": "application/json; charset=UTF-8",
     },

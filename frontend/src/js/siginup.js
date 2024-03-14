@@ -5,34 +5,25 @@ form.addEventListener("submit", (e) => {
 
   const url = `http://localhost:3000/api/users/register`;
 
-  // const formData = new FormData(form);
+  const formData = new FormData(form);
 
-  // const username = formData.get("username");
-  // const password = formData.get("password");
+  const name = formData.get("username");
+  const email = formData.get("email");
+  const password = formData.get("password");
+  const passwordConfirm = formData.get("password-confirm");
 
-  // const data = {
-  //   username,
-  //   password,
-  // };
+  const data = {
+    name,
+    email,
+    password,
+    passwordConfirm,
+  };
 
-  // console.log(JSON.stringify(data));
-
-  console.log(
-    JSON.stringify({
-      name: "Abdalla",
-      email: "abdalla@gmail.com",
-      password: "abdalla",
-    })
-  );
+  console.log(JSON.stringify(data));
 
   const options = {
     method: "POST",
-    body: JSON.stringify({
-      name: "Abdalla",
-      email: "abdalla@gmail.com",
-      password: "abdalla",
-      passwordConfirm: "abdalla",
-    }),
+    body: JSON.stringify(data),
     headers: {
       "Content-type": "application/json; charset=UTF-8",
     },
