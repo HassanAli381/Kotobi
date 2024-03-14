@@ -26,7 +26,10 @@ mongoose.connect(process.env.MONGO_URL)
 //req is recived as a string, this Middleware convert it to json.
 app.use(express.json());
 
-app.use(cors());
+// Allow requests from any origin
+app.use(cors({
+    origin: '*'
+}));
 
 app.use((req, res, next) => {
     req.requestTime = new Date().toISOString();
