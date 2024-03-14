@@ -1,9 +1,10 @@
-const form = document.querySelector(".signin");
+const form = document.querySelector(".register");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  const url = `http://localhost:3000/api/users/login`;
+  const url = `http://localhost:3000/api/users/register`;
+
   // const formData = new FormData(form);
 
   // const username = formData.get("username");
@@ -16,11 +17,22 @@ form.addEventListener("submit", (e) => {
 
   // console.log(JSON.stringify(data));
 
-  console.log(JSON.stringify({ email: "user@gmail.com", password: "123" }));
+  console.log(
+    JSON.stringify({
+      name: "Abdalla",
+      email: "abdalla@gmail.com",
+      password: "abdalla",
+    })
+  );
 
   const options = {
     method: "POST",
-    body: JSON.stringify({ email: "user2@gmail.com", password: "123" }),
+    body: JSON.stringify({
+      name: "Abdalla",
+      email: "abdalla@gmail.com",
+      password: "abdalla",
+      passwordConfirm: "abdalla",
+    }),
     headers: {
       "Content-type": "application/json; charset=UTF-8",
     },
